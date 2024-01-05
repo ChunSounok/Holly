@@ -1,0 +1,172 @@
+.center{
+    text-align:center;
+}
+
+.borderline{
+    border:2px solid gray;
+}
+
+.inline{
+    display:inline-block;
+}
+
+#margin30{
+    margin-left:30px;
+    margin-right:30px;
+    text-decoration:underline;
+}
+#margintop60{
+    margin-top:60px;
+}
+.mainimg{
+    width:300px;
+    height:420px;
+}
+
+.gridimg1{
+    display:grid;
+    grid-template-columns: 500px 500px;
+    grid-template-rows:250px 250px;
+}
+
+.itemimg1{
+    grid-column-start:1;
+    grid-column-end:1;
+    /*grid-column:1/1 로 간추릴 수 있음*/
+    grid-row-start:1;
+    grid-row-end:2;
+    /*grid-row:1/2 로 간추릴 수 있음*/
+}
+.itemimg2{
+    grid-column-start:2;
+    grid-column-end:2;
+    grid-row-start:1;
+    grid-row-end:1;
+}
+.itemimg3{
+    grid-column-start:2;
+    grid-column-end:2;
+    grid-row-start:2;
+    grid-row-end:2;
+}
+
+.gridcenter{
+    display:grid;
+    grid-template-rows:1fr;
+    margin:0%;
+    padding:0%;
+    place-items:center;
+}
+
+.headline{
+    display:grid;
+    grid-template-columns:30px 30px 30px 1fr;
+}
+
+.instaimg1{
+    grid-column:1/1;
+}
+.instaimg2{
+    grid-column:2/2;
+}
+.instaimg3{
+    grid-column:3/3;
+}
+
+.gridend{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr 1fr
+}
+.itemend1{
+    grid-column: 2/2;
+    line-height:27px;
+}
+.itemend1{
+    grid-column: 2/2;
+    line-height:27px;
+}
+.itemend2{
+    grid-column: 3/3;
+    line-height:27px;
+}
+.itemend3{
+    grid-column: 4/4;
+    line-height:27px;
+}
+.itemend4{
+    grid-column: 5/5;
+    line-height:27px;
+}
+.itemend5{
+    grid-column: 6/6;
+    line-height:27px;
+}
+
+.endline{
+    display:grid;
+    grid-template-columns:1fr 30px 30px 30px;
+
+}
+.instaimg4{
+    grid-column:4/4
+}
+
+.flex{
+    display:flex;
+    flex-direction:row;
+}
+.flexitem:nth-child(1){
+    flex-basis:230px;
+    border:1px solid black;
+    border-left:0px;
+    flex-shrink: 0 ;
+
+}
+.flexitem:nth-child(2){
+    flex-grow:1;
+    border-top:1px solid black;
+    border-bottom:1px solid black;
+}
+
+.game{
+    display:flex;
+    flex-direction:column;
+    
+}
+
+.navstylegame{
+    font-size:12pt;
+    font-weight:bolder;
+    text-align:center;
+    line-height:60px;
+    a{
+        text-decoration:none;
+        color:black;
+
+    }
+}
+.navbordergame{
+    border:1px solid black;
+    border-left:0px;
+    border-right:0px;
+    margin-left:10px;
+    margin-right:10px;
+    margin-top:40px;
+}
+
+.mainstylegame{
+    font-size :30pt;
+    font-weight:bolder;
+    font-family:'Franklin Gothic Medium';
+}
+
+.gridgame{
+    display:grid;
+    grid-template-columns:650 1fr;
+}
+.gridgameitem1{
+    grid-column: 1/1;
+}
+.gridgameitem2{
+    grid-column: 2/2;
+}
